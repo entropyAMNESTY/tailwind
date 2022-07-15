@@ -1,31 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Typography</title>
-  </head>
-  <body>
-    <!-- Font Family -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            http-equiv="X-UA-Compatible"
+            content="IE=edge"
+        />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <link
+            rel="preconnect"
+            href="https://fonts.googleapis.com"
+        />
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+            rel="stylesheet"
+        />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- Using some custom fonts in TailwindCSS -->
+        <script>
+            tailwind.config = {
+                theme: {
+                    fontFamily: {
+                        sans: [
+                            'ui-sans-serif',
+                            'system-ui',
+                        ],
+                        serif: ['Tapestry', 'Georgia'],
+                        mono: [
+                            'ui-monospace',
+                            'SFMono-Regular',
+                        ],
+                    },
+                },
+            };
+        </script>
+        <title>Typography</title>
+    </head>
+    <body>
+        <!-- Font Family -->
+        <div class="font-sans">Tailwind is awesome</div>
+        <div class="font-mono">Tailwind is awesome</div>
+        <div class="font-serif">Tailwind is awesome</div>
+        <!-- Font Size -->
+        <div class="text-xs">Tailwind is sizey</div>
+        <div class="text-sm">Tailwind is sizey</div>
+        <div class="text-base">Tailwind is sizey</div>
+        <div class="text-lg">Tailwind is sizey</div>
+        <div class="text-xl">Tailwind is sizey</div>
+        <div class="text-2xl">Tailwind is sizey</div>
+        <div class="text-3xl">Tailwind is sizey</div>
+        <!-- Max Size 9xl -->
+        <div class="text-9xl">Tailwind is sizey</div>
+        <!-- Font Weight -->
+        <div class="text-light">Tailwind is weighty</div>
+        <div class="text-normal">Tailwind is weighty</div>
+        <div class="text-medium">Tailwind is weighty</div>
+        <div class="text-semibold">Tailwind is weighty</div>
+        <div class="text-bold">Tailwind is weighty</div>
 
-    <!-- Font Size -->
+        <!-- Letter Spacing -->
+        <div class="text-tight">Tailwind is spacey</div>
+        <div class="text-normal">Tailwind is spacey</div>
+        <div class="text-wide">Tailwind is spacey</div>
 
-    <!-- Font Weight -->
+        <!-- Text Alignment -->
+        <div class="text-left">Tailwind is spacey</div>
+        <div class="text-right">Tailwind is spacey</div>
+        <div class="text-center">Tailwind is spacey</div>
 
-    <!-- Letter Spacing -->
+        <!-- Text Decoration -->
+        <div
+            class="underline decoration-4 decoration-blue-400"
+        >
+            Tailwind is decorated
+        </div>
+        <!-- Decoration Style -->
+        <div class="underline decoration-double">
+            Tailwind is decorated
+        </div>
+        <div class="underline decoration-dotted">
+            Tailwind is decorated
+        </div>
+        <div class="underline decoration-wavey">
+            Tailwind is decorated
+        </div>
+        <div class="underline decoration-dashed">
+            Tailwind is decorated
+        </div>
 
-    <!-- Text Alignment -->
+        <!-- Decoration Offset -->
+        <div
+            class="underline decoration-dashed underline-offset-8"
+        >
+            Tailwind is decorated
+        </div>
 
-    <!-- Text Decoration -->
-
-    <!-- Decoration Style -->
-
-    <!-- Decoration Offset -->
-
-    <!-- Text Transform -->
-  </body>
+        <!-- Text Transform -->
+        <p class="normal-case">Tailwind, whatever!</p>
+        <p class="uppercase">Tailwind, whatever!</p>
+        <p class="lowercase">Tailwind, whatever!</p>
+        <p class="capitalize">Tailwind, whatever!</p>
+    </body>
 </html>
 
 <!-- Font Family

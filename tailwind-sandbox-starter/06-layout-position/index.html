@@ -1,37 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>TailwindCSS</title>
-  </head>
-  <body>
-    <!-- Positioning -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            http-equiv="X-UA-Compatible"
+            content="IE=edge"
+        />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>TailwindCSS</title>
+    </head>
+    <body>
+        <!-- Positioning -->
+        <div class="relative w-1/2 h-12 bg-red-200">
+            <p>Parent</p>
+            <div
+                class="absolute bottom-0 right-0 bg-emerald-700"
+            >
+                Absolute Child
+            </div>
+        </div>
 
-    <!-- Top left corner -->
+        <!-- Top left corner -->
+        <div class="relative h-32 w-32 bg-yellow-300">
+            <div
+                class="absolute left-0 top-0 h-16 w-16 bg-red-400"
+            ></div>
+        </div>
 
-    <!-- Top right corner -->
+        <!-- Top right corner -->
 
-    <!-- Bottom left corner -->
+        <div class="relative h-32 w-32 bg-purple-300">
+            <div
+                class="absolute right-0 top-0 h-16 w-16 bg-red-400"
+            ></div>
+        </div>
+        <!-- Bottom left corner -->
 
-    <!-- Bottom right corner -->
+        <div class="relative h-32 w-32 bg-pink-300">
+            <div
+                class="absolute left-0 bottom-0 h-16 w-16 bg-red-400"
+            ></div>
+        </div>
+        <!-- Bottom right corner -->
+        <div class="relative h-32 w-32 bg-blue-300">
+            <div
+                class="absolute right-0 bottom-0 h-16 w-16 bg-red-400"
+            ></div>
+        </div>
+        <!-- Span top edge -->
+        <div class="relative h-32 w-32 bg-purple-300">
+            <div
+                class="absolute inset-x-0 top-0 h-16 bg-red-400"
+            ></div>
+        </div>
+        <!-- Span left edge -->
+        <div class="relative h-32 w-32 bg-purple-300">
+            <div
+                class="absolute inset-y-0 top-0 w-16 bg-red-400"
+            ></div>
+        </div>
+        <!-- Display Classes -->
+        <div>
+            Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. In, dolores asperiores
+            excepturi omnis consequuntur blanditiis quas
+            nisi fugit
+            <span class="inline font-bold"
+                >accusamus doloribus modi illum
+            </span>
+            autem deleniti dolorum cum? span Est itaque
+            accusamus voluptatem eligendi pariatur, quisquam
+            odio at. Alias
+            <span class="inline-block font-bold"
+                >deleniti vitae optio aperiam</span
+            >
+            dolores nihil consequatur.
+            <span class="block font bold"
+                >earum. Consequuntur fuga</span
+            >
+            Ab, error earum. Vitae aliquid amet veniam
+            reiciendis mollitia
+            <span class="hidden"
+                >maiores doloremque vitae assumenda</span
+            >
+            nulla?
+        </div>
+        <!-- Z-Index -->
 
-    <!-- Span top edge -->
+        <div class="relative h-36">
+            <div
+                class="absolute left-10 h-24 w-24 bg-blue-200 z-0"
+            >
+                1
+            </div>
+            <div
+                class="absolute left-20 h-24 w-24 bg-blue-900 z-20"
+            >
+                2
+            </div>
+            <div
+                class="absolute left-40 h-24 w-24 bg-blue-700 z-7"
+            >
+                3
+            </div>
+            <div
+                class="absolute left-60 h-24 w-24 bg-blue-500 z-99"
+            >
+                4
+            </div>
+            <div
+                class="absolute left-80 h-24 w-24 bg-blue-400 z-36"
+            >
+                5
+            </div>
+        </div>
 
-    <!-- Span left edge -->
-
-    <!-- Span right edge -->
-
-    <!-- Span bottom edge -->
-
-    <!-- Display Classes -->
-
-    <!-- Z-Index -->
-
-    <!-- Floats -->
-  </body>
+        <!-- Floats -->
+        <div class="w-1/2">
+            <img
+                class="h-48 w-48 float-left m-4"
+                src="../assets/img/img3.jpg"
+                alt=""
+            />
+            <p>
+                Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Nulla incidunt, obcaecati
+                accusamus numquam delectus iure, facere
+                consectetur sed dolorem ad tempora sunt
+                porro earum rerum magnam eos! Amet, id.
+                Quam?
+            </p>
+        </div>
+    </body>
 </html>
 
 <!-- Position Classes

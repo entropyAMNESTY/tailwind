@@ -1,35 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Sizing</title>
-  </head>
-  <body>
-    <!-- Width -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            http-equiv="X-UA-Compatible"
+            content="IE=edge"
+        />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>Sizing</title>
+    </head>
+    <body>
+        <!-- Width || 0.25rem steps -->
+        <div class="bg-black text-white w-12">Hello</div>
 
-    <!-- Percentages -->
+        <!-- Percentages -->
+        <div class="bg-green-700 text-white w-1/4">
+            Hello
+        </div>
+        <div class="bg-emerald-700 text-white w-1/2">
+            Hello
+        </div>
+        <!-- Width of the viewport -->
+        <div class="bg-blue-700 text-white w-screen">
+            Hello
+        </div>
+        <!-- 100% of container -->
+        <div class="bg-blue-200 text-white w-full">
+            Hello
+        </div>
+        <!-- Arbitrary width -->
+        <div class="bg-gray-900 text-white w-[200px]">
+            Hello
+        </div>
 
-    <!-- Width of the viewport -->
+        <!-- min/max content -->
 
-    <!-- 100% of container -->
+        <!-- Max Width -->
+        <div
+            class="bg-gray-900 text-white max-w-sm mx-auto"
+        >
+            Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Praesentium magni laboriosam
+            quisquam fugit eveniet minus quas. Odio laborum
+            porro eaque voluptate nemo neque, omnis sint.
+            Numquam beatae quas perferendis iste?
+        </div>
 
-    <!-- min/max content -->
-
-    <!-- Arbitrary width -->
-
-    <!-- Max Width -->
-
-    <!-- Height (Most of the same options as widths) -->
-
-    <!-- Min Height -->
-
-    <!-- Max Height -->
-
-    <!-- Full screen height -->
-  </body>
+        <!-- Height (Most of the same options as widths) -->
+        <div class="flex items-end">
+            <div class="bg-orange-500 w-20 h-24">Smile</div>
+            <div class="bg-orange-500 w-20 h-32">Smile</div>
+            <div class="bg-orange-500 w-20 h-48">Smile</div>
+            <div class="bg-orange-500 w-20 h-64">Smile</div>
+            <div class="bg-orange-500 w-20 h-96">Smile</div>
+            <div class="bg-orange-500 w-20 h-screen">
+                Smile
+            </div>
+        </div>
+    </body>
 </html>
 
 <!-- 
